@@ -1,0 +1,23 @@
+{
+    "version": "0.1",
+    "name": "NOADS",
+    "description": "Google search page ads deleted.",
+    "manifest_version": 3,
+    "permissions": [
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.google.com/*"
+            ],
+            "js": [
+                "js/main.js"
+            ]
+        }
+    ],
+    "icons": {
+        "64": "/icons/64.png",
+        "128": "icons/128.png"
+    }
+}
